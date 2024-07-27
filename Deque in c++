@@ -1,0 +1,33 @@
+///Deque te front thekee o pop kora jabe,abar front e push o kora jabe,Temni Rear/Back e push kora jabe,abar pop o kora jabe.
+///D mane double,doi side theke operation chalano jabe Dequeue te.
+#include<bits/stdc++.h>
+using namespace std;
+///"Defination":A Deque is a double-ended queue that allows enqueue and dequeue operations from both the ends.
+///eti slyding windows e lagbe.Very very important;
+int main()
+{
+    cout<<"Defination:A Deque is a double-ended queue that allows enqueue and dequeue operations from both the ends"<<endl;
+///Declaration:
+  deque<int>dq;
+  dq.push_front(1);///Deque's element:1;
+  dq.push_front(2);///2 1;
+  dq.push_front(3);///3 2 1;
+  dq.push_back(4);///3 2 1 4;
+  dq.push_back(5);///3 2 1 4 5;
+  cout<<dq.front()<<" "<<dq.back()<<endl;///3 5;
+  dq.pop_front();///3 delete hoye jabe.
+  cout<<dq.front()<<" "<<dq.back()<<endl;///2 5;
+  dq.pop_back();///5 delete hoye jabe.
+  cout<<dq.front()<<" "<<dq.back()<<endl;///2 4;
+  cout<<"Deque's size:"<<dq.size()<<endl;///(2 3 4)=size:3;
+  cout<<"Deque empty kina check:"<<dq.empty()<<endl;///output:0 mane empty na.1 mane empty bujabe.
+  return 0;
+}
+///Dequeue te o sob operation 0(1).
+/*
+3 5
+2 5
+2 4
+Deque's size:3
+Deque empty kina check:0
+*/
